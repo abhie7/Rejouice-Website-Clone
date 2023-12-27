@@ -4,7 +4,7 @@
 
 This project is a website clone attempt inspired by [**Rejouice**](https://rejouice.com). The primary goal was to replicate the visual aspects and functionality of Rejouice while utilizing GSAP, Locomotive Scroll JS, and SwiperJS for animations and interactive components.
 
-The live version of the cloned website can be accessed [**here**](link-to-your-cloned-website).
+The live version of the cloned website can be accessed [**here**](https://abhie7.github.io/Rejouice-Website-Clone/).
 
 The project is open source and licensed under the [MIT License](LICENSE).
 
