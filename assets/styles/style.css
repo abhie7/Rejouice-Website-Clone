@@ -1,10 +1,10 @@
 @font-face {
   font-family: nb;
-  src: url(../fonts/NBInternationalProBoo.ttf);
+  src: url(fonts/NBInternationalProBoo.ttf);
 }
 @font-face {
   font-family: rj;
-  src: url(../fonts/Rejouice-Headline.ttf);
+  src: url(fonts/Rejouice-Headline.ttf);
 }
 
 * {
