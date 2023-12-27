@@ -1,3 +1,33 @@
+function loaderAnimation() {
+  var tl = gsap.timeline();
+
+  tl.from("#loader h3", {
+    x: 50,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.3,
+  });
+  tl.to("#loader h3", {
+    opacity: 0,
+    x: -50,
+    duration: 0.6,
+    stagger: 0.2,
+  });
+  tl.to("#loader", {
+    opacity: 0,
+  });
+  tl.from("#page1-content h1 span", {
+    y: 100,
+    opacity: 0,
+    stagger: 0.15,
+    duration: 0.5,
+  });
+  tl.to("#loader", {
+    display: "none",
+  });
+}
+loaderAnimation();
+
 function locoScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +71,7 @@ locoScroll();
 
 function cursorEffect() {
   var page1Content = document.querySelector("#page1-content");
+  // var page4-5 = document.querySelector("#page4-5");
   var cursor = document.querySelector("#cursor");
 
   // page1Content.addEventListener("mousemove", function (val) {
@@ -102,3 +133,17 @@ function page4Animation() {
   });
 }
 page4Animation();
+
+function sliderAnimation() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 6000,
+    autoplay: {
+      delay: -12000,
+      disableOnInteraction: false,
+    },
+  });
+}
+sliderAnimation();
